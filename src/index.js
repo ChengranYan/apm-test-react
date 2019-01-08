@@ -8,7 +8,8 @@ import * as serviceWorker from './serviceWorker';
 import * as Sentry from '@sentry/browser';
 
 Sentry.init({
- dsn: "https://8957f6a7c18a425bb72e3b03bf9ae148@sentry.io/1366381"
+  release: '1.0',
+  dsn: "https://8957f6a7c18a425bb72e3b03bf9ae148@sentry.io/1366381"
 });
 
 ReactDOM.render( <ErrorBoundary><App / ></ErrorBoundary>, document.getElementById('root'));
